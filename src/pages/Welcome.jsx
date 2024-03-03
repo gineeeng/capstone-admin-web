@@ -402,8 +402,8 @@ const Welcome = () => {
         </select>
       </div>
 
-      <div className=" w-full flex flex-col xl:flex-row gap-3">
-        <div className="w-full flex flex-col gap-3">
+      <div className="w-full grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 gap-2">
+        <div className="flex flex-col gap-3">
           <div className="crime-chart bg-gray-700 rounded-lg p-2">
             <h2 className="text-xl m-2 font-semibold">Crime</h2>
             <ResponsiveContainer width="100%" height={400}>
@@ -446,7 +446,7 @@ const Welcome = () => {
           </div>
         </div>
 
-        <div>
+        <div className="w-full">
           <div className="bg-gray-700 rounded-lg p-2 w-full">
             <h2 className="text-xl m-2 font-semibold">Recent User Reports: </h2>
             {crimeData
@@ -465,7 +465,7 @@ const Welcome = () => {
                 </div>
               ))}
           </div>
-          <div className=" mt-4 justify-center text-4x text-gray-700">
+          <div className=" mt-4 justify-center text-4x text-gray-700 text-justify">
             <h5 className="mt-4 text-2xl">
               We are proud to present a platform specifically designed to
               provide up-to-date information on crime and accident data. Our
