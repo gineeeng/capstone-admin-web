@@ -188,15 +188,15 @@ const FindUser = () => {
       <div className="mb-2">
         <h1 className="text-2xl font-bold">Reported Crimes</h1>
         <div className="flex flex-wrap gap-2 mt-2 text-white">
-          <div className="bg-gray-700 rounded-lg p-3 text-dark">
+          <div className="bg-[#191919] rounded-lg p-3 text-dark">
             <h2 className="text-2xl font-bold">Total Reported Crimes</h2>
             <p>{reportedCrimes.length}</p>
           </div>
-          <div className="bg-gray-700 rounded-lg p-3 text-dark">
+          <div className="bg-[#191919] rounded-lg p-3 text-dark">
             <h2 className="text-2xl font-bold">Total Reported Solved Crimes</h2>
             <p>{reportedSolvedCrimes.length}</p>
           </div>
-          <div className="bg-gray-700 rounded-lg p-3 text-dark">
+          <div className="bg-[#191919] rounded-lg p-3 text-dark">
             <h2 className="text-2xl font-bold">Total Reported Solved Crimes</h2>
             <p>{reportedUnsolvedCrimes.length}</p>
           </div>
@@ -206,17 +206,17 @@ const FindUser = () => {
       <div>
         <h1 className="text-2xl font-bold">Reported Accidents</h1>
         <div className="flex flex-wrap gap-2 mt-2 text-white">
-          <div className="bg-gray-700 rounded-lg p-3 text-dark">
+          <div className="bg-[#191919] rounded-lg p-3 text-dark">
             <h2 className="text-2xl font-bold">Total Reported Accidents</h2>
             <p>{reportedAccidents.length}</p>
           </div>
-          <div className="bg-gray-700 rounded-lg p-3 text-dark">
+          <div className="bg-[#191919] rounded-lg p-3 text-dark">
             <h2 className="text-2xl font-bold">
               Total Reported Solved Accidents
             </h2>
             <p>{reportedSolvedAccidents.length}</p>
           </div>
-          <div className="bg-gray-700 rounded-lg p-3 text-dark">
+          <div className="bg-[#191919] rounded-lg p-3 text-dark">
             <h2 className="text-2xl font-bold">
               Total Reported Solved Accidents
             </h2>

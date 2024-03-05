@@ -16,7 +16,7 @@ const Dashboard = () => {
   return (
     <div className="flex h-screen">
       <Sidebar />
-      <main className="overflow-y-auto  w-full max-w-screen bg-white">
+      <main className="overflow-y-auto  w-full max-w-screen bg-[#2e2e2e] ">
         <Outlet />
       </main>
     </div>

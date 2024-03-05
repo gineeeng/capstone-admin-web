@@ -6,7 +6,7 @@ const SelectStatusTab = ({ selectedTab, setSelectedTab }) => {
           (status) => (
             <button
               key={status}
-              className={`tab text-lg font-semibold ${selectedTab === status ? "active-tab bg-gray-700 rounded text-white" : "text-gray-700"}`}
+              className={`tab text-lg font-semibold ${selectedTab === status ? "active-tab bg-[#191919] rounded text-white" : "text-white"}`}
               onClick={() => setSelectedTab(status)}
             >
               <span className="tab-name">{status}</span>

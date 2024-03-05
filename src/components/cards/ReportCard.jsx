@@ -9,7 +9,7 @@ const ReportCard = ({
   totalOngoingReports,
 }) => {
   return (
-    <div className="card bg-gray-700">
+    <div className="card bg-[#191919]">
       <div className="card-inner">
         <h3 className="text-2xl font-bold">{label} Reported</h3>
         <MdOutlineLocalPolice className="card_icon" />

@@ -10,7 +10,7 @@ import UserDataTable from "../components/table/UserDataTable";
 const User = () => {
   const token = Cookies.get("token");
   const { data, loading } = useFetchData(
-    `${import.meta.env.VITE_CRS_API_KEY}/api/reports/users`
+    `${import.meta.env.VITE_CRS_API_KEY}/api/users`
   );
   const [searchQuery, setSearchQuery] = useState("");
   const [userStatus, setUserStatus] = useState([]);
@@ -58,7 +58,7 @@ const User = () => {
 
   return (
     <div className="p-2 justify-center text-4xl">
-      <h1 className="font-semibold mt-4 text-gray-700">User Management</h1>
+      <h1 className="font-semibold mt-4 text-white">User Management</h1>
       <SearchBar searchQuery={searchQuery} setSearchQuery={setSearchQuery} />
       <UserDataTable  
         data={filteredUsers}

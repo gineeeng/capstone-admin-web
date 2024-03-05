@@ -38,7 +38,7 @@ const Accident = () => {
  
   return (
     <div className="p-2 justify-center text-4xl">
-      <h1 className="font-semibold mt-4 text-gray-700">Accident Reports</h1>
+      <h1 className="font-semibold mt-4 text-white">Accident Reports</h1>
       <div className="flex flex-wrap gap-5 mt-4">
         <SelectLocation
           selectedLocation={selectedLocation}

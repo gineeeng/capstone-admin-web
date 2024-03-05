@@ -18,7 +18,7 @@ const DataTable = ({ data, actionStatus, updateActionStatus }) => {
 
   return (
     <div className="overflow-x-auto mt-4 justify-center min-h-screen">
-      <table className="table justify-center bg-gray-700">
+      <table className="table justify-center bg-[#191919]">
         <thead>
           <tr>
             {headers.map((header, index) => (
@@ -53,7 +53,7 @@ const DataTable = ({ data, actionStatus, updateActionStatus }) => {
                 {item.injurySeverity || "none"}
               </td>
               <td className="text-white text-md font-base text-center">
-                {new Date(item.date).toLocaleDateString("id-ID", {
+                {new Date(item.date).toLocaleDateString("en-US", {
                   year: "numeric",
                   month: "long",
                   day: "numeric",

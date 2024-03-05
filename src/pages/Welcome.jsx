@@ -357,7 +357,7 @@ const Welcome = () => {
   return (
     <main className="p-2">
       <div className="main-title font-semibold mb-2 mt-4">
-        <h3 className="text-gray-700">Admin Dashboard</h3>
+        <h3 className="text-white">Admin Dashboard</h3>
       </div>
       <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-2">
         <ReportCard
@@ -388,13 +388,13 @@ const Welcome = () => {
           totalOngoingReports={totalOngoingHazard}
         />
       </div>
-      <div className="text-xl font-semibold m-3 text-gray-700">
+      <div className="text-xl font-semibold m-3 text-white">
         <label htmlFor="filterCriteria">Filter Graph Criteria: </label>
         <select
           id="filterCriteria"
           value={filterCriteria}
           onChange={(e) => setFilterCriteria(e.target.value)}
-          className="bg-gray-700 text-white rounded p-2"
+          className="bg-[#191919] text-white rounded p-2"
         >
           <option value="month">Month</option>
           <option value="day">Day</option>
@@ -404,7 +404,7 @@ const Welcome = () => {
 
       <div className="w-full grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 gap-2">
         <div className="flex flex-col gap-3">
-          <div className="crime-chart bg-gray-700 rounded-lg p-2">
+          <div className="crime-chart bg-[#191919] rounded-lg p-2">
             <h2 className="text-xl m-2 font-semibold">Crime</h2>
             <ResponsiveContainer width="100%" height={400}>
               <BarChart data={combineData()}>
@@ -422,7 +422,7 @@ const Welcome = () => {
               </BarChart>
             </ResponsiveContainer>
           </div>
-          <div className="accident-chart bg-gray-700 rounded-lg p-2">
+          <div className="accident-chart bg-[#191919] rounded-lg p-2">
             <h2 className="text-xl m-2 font-semibold">Accident</h2>
             <ResponsiveContainer width="100%" height={400}>
               <BarChart data={combineData()}>
@@ -447,7 +447,7 @@ const Welcome = () => {
         </div>
 
         <div className="w-full">
-          <div className="bg-gray-700 rounded-lg p-2 w-full">
+          <div className="bg-[#191919] rounded-lg p-2 w-full">
             <h2 className="text-xl m-2 font-semibold">Recent User Reports: </h2>
             {crimeData
               .slice(-5)
@@ -465,7 +465,7 @@ const Welcome = () => {
                 </div>
               ))}
           </div>
-          <div className=" mt-4 justify-center text-4x text-gray-700 text-justify">
+          <div className=" mt-4 justify-center text-4x text-white text-justify">
             <h5 className="mt-4 text-2xl">
               We are proud to present a platform specifically designed to
               provide up-to-date information on crime and accident data. Our

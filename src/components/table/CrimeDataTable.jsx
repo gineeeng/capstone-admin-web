@@ -19,7 +19,7 @@ const CrimeDataTable = ({ data, actionStatus, updateActionStatus }) => {
 
   return (
     <div className="overflow-x-auto mt-4 justify-center min-h-screen	">
-      <table className="table justify-center bg-gray-700">
+      <table className="table justify-center bg-[#191919]">
         <thead>
           <tr>
             {headers.map((header, index) => (
@@ -57,7 +57,7 @@ const CrimeDataTable = ({ data, actionStatus, updateActionStatus }) => {
                 {crime.injurySeverity ? crime.injurySeverity : "none"}
               </td>
               <td className="text-white text-md font-base text-center">
-                {new Date(crime.date).toLocaleDateString("id-ID", {
+                {new Date(crime.date).toLocaleDateString("en-US", {
                   year: "numeric",
                   month: "long",
                   day: "numeric",
