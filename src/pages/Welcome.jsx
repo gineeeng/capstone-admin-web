@@ -340,17 +340,17 @@ const Welcome = () => {
     (crime) => crime.action_status === "InProgress" || "Pending"
   ).length;
 
-  const totalSolvedArson = accidentData.filter(
+  const totalSolvedArson = arsonData.filter(
     (crime) => crime.action_status === "Solved"
   ).length;
-  const totalOngoingArson = accidentData.filter(
+  const totalOngoingArson = arsonData.filter(
     (crime) => crime.action_status === "InProgress" || "Pending"
   ).length;
 
-  const totalSolvedHazard = accidentData.filter(
+  const totalSolvedHazard = hazardData.filter(
     (crime) => crime.action_status === "Solved"
   ).length;
-  const totalOngoingHazard = accidentData.filter(
+  const totalOngoingHazard = hazardData.filter(
     (crime) => crime.action_status === "InProgress" || "Pending"
   ).length;
 
