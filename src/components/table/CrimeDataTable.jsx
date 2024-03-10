@@ -19,7 +19,7 @@ const CrimeDataTable = ({ data, actionStatus, updateActionStatus }) => {
 
   return (
     <div className="overflow-x-auto mt-4 justify-center min-h-screen	">
-      <table className="table justify-center bg-[#191919]">
+      <table className="table justify-center bg-[#191919] ">
         <thead>
           <tr>
             {headers.map((header, index) => (
