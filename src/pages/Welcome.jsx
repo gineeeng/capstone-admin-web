@@ -329,36 +329,35 @@ const Welcome = () => {
   const totalSolvedCrime = crimeData.filter(
     (crime) => crime.action_status === "Solved"
   ).length;
-  
+
   const totalSolvedAccident = accidentData.filter(
     (crime) => crime.action_status === "Solved"
   ).length;
- 
 
   const totalSolvedArson = arsonData.filter(
     (crime) => crime.action_status === "Solved"
   ).length;
-  
 
   const totalSolvedHazard = hazardData.filter(
     (crime) => crime.action_status === "Solved"
   ).length;
+
   const totalOngoingCrimes = crimeData.filter(
-  (crime) => crime.action_status === "InProgress" || crime.action_status === "Pending"
-).length;
-
-const totalOngoingAccident = accidentData.filter(
-  (crime) => crime.action_status === "InProgress" || crime.action_status === "Pending"
-).length;
-
-const totalOngoingArson = arsonData.filter(
-  (crime) => crime.action_status === "InProgress" || crime.action_status === "Pending"
-).length;
-
-const totalOngoingHazard = hazardData.filter(
-  (crime) => crime.action_status === "InProgress" || crime.action_status === "Pending"
-).length;
-
+    (crime) => crime.action_status === "InProgress" || crime.action_status === "Pending"
+  ).length;
+  
+  const totalOngoingAccident = accidentData.filter(
+    (crime) => crime.action_status === "InProgress" || crime.action_status === "Pending"
+  ).length;
+  
+  const totalOngoingArson = arsonData.filter(
+    (crime) => crime.action_status === "InProgress" || crime.action_status === "Pending"
+  ).length;
+  
+  const totalOngoingHazard = hazardData.filter(
+    (crime) => crime.action_status === "InProgress" || crime.action_status === "Pending"
+  ).length;
+  
   return (
     <main className="p-2">
       <div className="main-title font-semibold mb-2 mt-4">
